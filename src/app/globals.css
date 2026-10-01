@@ -4160,3 +4160,225 @@ body{background:#FFFFFF;color:var(--charcoal);font-family:'Inter',-apple-system,
 .spp-actions .btn-outline:hover{background:#FAF8F3;border-color:#00439C;color:#00439C}
 
 .td-logo{height:56px;width:auto;margin-bottom:20px;object-fit:contain}
+
+/* =========================================================
+   PREMIUM WHITE + IVORY HERO
+   ========================================================= */
+
+.hero {
+  position: relative;
+  background: #ffffff;
+  padding: 28px 0 80px;
+  overflow: hidden;
+}
+
+/* -----------------------------------------
+   HERO IMAGE
+----------------------------------------- */
+
+.hero-banner {
+  width: 100%;
+  margin: 0 auto 56px;
+  animation-delay: var(--delay);
+}
+
+.hero-banner-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #f7f3ea;
+}
+
+/* Soft ivory atmosphere */
+.hero-banner-inner::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 0;
+  height: 30%;
+  background: radial-gradient(
+    ellipse at center bottom,
+    rgba(242, 237, 226, 0.55),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+}
+
+.hero-banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-banner-inner:hover .hero-banner-image {
+  transform: scale(1.015);
+}
+
+/* -----------------------------------------
+   HERO CONTENT
+----------------------------------------- */
+
+.hero-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -----------------------------------------
+   BADGE
+----------------------------------------- */
+
+.hero .badge-sales {
+  margin-bottom: 16px;
+}
+
+.hero .badge-dot {
+  background: #00439c;
+}
+
+/* -----------------------------------------
+   HEADLINE
+----------------------------------------- */
+
+.hero .hero-headline {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  color: #242424;
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+}
+
+.hero .text-accent {
+  color: #00439c;
+}
+
+/* -----------------------------------------
+   DESCRIPTION
+----------------------------------------- */
+
+.hero .hero-subheadline {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  color: #77736b;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* -----------------------------------------
+   ACTIONS
+----------------------------------------- */
+
+.hero .hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* -----------------------------------------
+   PRIMARY BUTTON
+----------------------------------------- */
+
+.hero .btn-primary {
+  background: #00439c;
+  color: #ffffff;
+  border: 1px solid #00439c;
+  box-shadow: 0 8px 24px rgba(0, 67, 156, 0.16);
+}
+
+.hero .btn-primary:hover {
+  background: #00377f;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------------
+   OUTLINE BUTTON
+----------------------------------------- */
+
+.hero .btn-outline {
+  background: #ffffff;
+  color: #242424;
+  border: 1px solid #e5ded2;
+}
+
+.hero .btn-outline:hover {
+  background: #f7f3ea;
+  color: #242424;
+  transform: translateY(-2px);
+}
+
+/* -----------------------------------------
+   WHATSAPP
+----------------------------------------- */
+
+.hero .hero-wa-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #55514b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.hero .hero-wa-link:hover {
+  color: #00439c;
+}
+
+/* -----------------------------------------
+   MOBILE
+----------------------------------------- */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 18px 0 60px;
+  }
+
+  .hero-banner {
+    margin-bottom: 40px;
+  }
+
+  .hero-banner-inner {
+    border-radius: 16px;
+  }
+
+  .hero-banner-image {
+    max-height: 360px;
+  }
+
+  .hero .hero-headline {
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
+    line-height: 1.08;
+  }
+
+  .hero .hero-subheadline {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .hero .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero .hero-actions .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
