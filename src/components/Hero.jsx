@@ -16,7 +16,7 @@ export default function Hero() {
         >
           <div className="hero-banner-inner">
             <img
-              src="/images/newxl7.png"
+              src="/images/Suzuki_hero.png"
               alt="New Suzuki XL7"
               className="hero-banner-image"
               loading="eager"
