@@ -8,17 +8,6 @@ export const products = [
     image: 'newxl7.png',
     gallery: [],
     variants: [
-      // XL7 REGULER
-      { name: 'XL7 New Zeta MT', price: 245350000 },
-      { name: 'XL7 New Zeta AT', price: 256450000 },
-      { name: 'XL7 New Beta MT Hybrid', price: 273600000 },
-      { name: 'XL7 New Beta AT Hybrid', price: 284600000 },
-      { name: 'XL7 New Alpha MT Hybrid', price: 284100000 },
-      { name: 'XL7 New Alpha MT Hybrid 2 Tone', price: 286600000 },
-      { name: 'XL7 New Alpha AT Hybrid', price: 295550000 },
-      { name: 'XL7 New Alpha AT Hybrid 2 Tone', price: 297550000 },
-      { name: 'XL7 New Alpha AT Hybrid Kuro', price: 302200000 },
-      { name: 'XL7 New Alpha AT Hybrid 2 Tone Kuro', price: 303700000 },
       // XL7 MC NIK 2026
       { name: 'XL7 Zeta MT MC', price: 257700000 },
       { name: 'XL7 Zeta AT MC', price: 268700000 },
