@@ -81,6 +81,7 @@ export const deliveryPhotos = [
   { src: "serah-terima4.jpeg", caption: "Serah terima unit Suzuki" },
   { src: "serah-terima5.jpeg", caption: "Serah terima unit Suzuki" },
   { src: "serah-terima6.jpeg", caption: "Serah terima unit Suzuki" },
+  { src: "serah-terima7.jpeg", caption: "Serah terima unit Suzuki" },
   { src: "serah-terima8.jpeg", caption: "Serah terima unit Suzuki" },
   { src: "serah-terima9.jpeg", caption: "Serah terima unit Suzuki" }
 ];
