@@ -1,7 +1,8 @@
-import { siteConfig } from "../data/siteConfig";
 
-export default function robots() {
-  const baseUrl = "https://www.suzukiuntukbdg.com";
+import type { MetadataRoute } from "next";
+
+export default function robots(): MetadataRoute.Robots {
+  const baseUrl = "https://suzuki-ay-nara.vercel.app";
 
   return {
     rules: [
@@ -16,7 +17,6 @@ export default function robots() {
     ],
 
     sitemap: `${baseUrl}/sitemap.xml`,
-
     host: baseUrl,
   };
 }
