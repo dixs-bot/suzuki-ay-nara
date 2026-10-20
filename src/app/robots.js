@@ -1,21 +1,14 @@
+const baseUrl = "https://suzuki-ay-nara.vercel.app";
 
-import type { MetadataRoute } from "next";
-
-export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://suzuki-ay-nara.vercel.app";
-
+export default function robots() {
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: [
-          "/api/",
-          "/_next/",
-        ],
+        disallow: ["/api/", "/_next/"],
       },
     ],
-
     sitemap: `${baseUrl}/sitemap.xml`,
     host: baseUrl,
   };
